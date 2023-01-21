@@ -1,5 +1,4 @@
 from ..Element import Element
-from ..ChildlessMixin import ChildlessMixin
 
 from .latex import latex
 from .head import head
@@ -12,7 +11,6 @@ from .p import p
 
 __all__ = [
     "Element",
-    "ChildlessMixin",
     "latex",
     "head",
     "usepackage",

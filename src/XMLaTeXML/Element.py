@@ -25,13 +25,16 @@ class Element:
                 for attr_name, attr_value in attr_kwargs_not_none.items()
             ))
 
+        if self.children is None:
+            ret += "/>\n"
+            return ret
+
         ret += ">\n"
 
-        if self.children is not None:
-            for child in self.children:
-                child_str = str(child)
-                for line in child_str.splitlines():
-                    ret += f"  {line}\n"
+        for child in self.children:
+            child_str = str(child)
+            for line in child_str.splitlines():
+                ret += f"  {line}\n"
 
         ret += f"</{self.__class__.__name__}>\n"
 
