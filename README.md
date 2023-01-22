@@ -28,3 +28,15 @@ Using Python to programmatically generate XML-ish code, procrastinating against 
   </body>
 </latex>
 ```
+
+---
+
+## EOF
+
+Probably will just fork [PyLaTeX](https://github.com/JelteF/PyLaTeX) which I've used before.
+
+Replacing $\LaTeX$'s backend looks like a behemoth task, not a task for one person.
+
+Project archived to Area51
+
+---
